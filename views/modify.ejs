@@ -1,0 +1,20 @@
+<%-include('partials/header.ejs')  %>
+
+<body>
+  <div class="container">
+    <h1>
+      New Post
+    </h1>
+
+      <form id="newPostForm" method="post" action="/api/posts">
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="content" placeholder="Content" required rows="10"></textarea>
+        <button class="full-width" type="submit">
+          Submit Post
+        </button>
+      </form>
+
+  </div>
+</body>
+
+<%-include('partials/footer.ejs')  %>

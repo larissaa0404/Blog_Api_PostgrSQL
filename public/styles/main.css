@@ -1,0 +1,264 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-image: url(/img/bricks1.jpg);
+  background-size: auto;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Header */
+.fs-4 {
+  border-radius: 8px;
+  padding: 5px;
+  background-color: transparent;
+  box-shadow: 5px 4px 15px rgba(9, 5, 255, 0.9);
+}
+.nav-link{
+  box-shadow: 5px 4px 15px rgba(9, 5, 255, 0.9);
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+/* Body */
+.container {
+  max-width: 750px;
+  margin-top: 70px;
+  background-color: #f7f9fc;
+  padding: 40px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(9, 5, 255, 0.9);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #444;
+  text-shadow: 10px 4px 15px rgba(9, 5, 255, 0.9);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #598af5;
+}
+
+p,
+input,
+textarea {
+  margin-bottom: 20px;
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  color: #888;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+a,
+button {
+  text-decoration: none;
+  background-color: #83afde;
+  color: #fff;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.full-width {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+a,
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+a.edit {
+  background-color: #007bff;
+  /* margin-right: 10px; */
+}
+a.edit:hover { 
+  background-color: #6394c9;
+}
+
+a.delete {
+  background-color: #e74c3c;
+}
+
+a.delete:hover {
+  background-color: #c0392b;
+}
+
+#newPostBtn {
+  margin: 20px 0;
+  background-color: #2ecc71;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+#newPostBtn:hover {
+  background-color: #27ae60;
+}
+.invisible {
+  visibility: hidden;
+}
+/* Login Page */
+
+.loginPage {
+  width: 450px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.login-form-title {
+  text-align: center;
+  text-shadow: 5px 10px 15px rgba(9, 5, 255, 0.9);
+}
+
+.login-form-btn{
+  width: 100%;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.form{
+  border-bottom: 2px solid #6c80ef;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 7px;
+}
+.form svg {
+  width: 22px;
+  height: 22px;
+}
+
+.form svg path {
+  fill: #6cb4ef;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.register {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.form.invalid {
+  border-bottom-color: #ff0296;
+}
+.form.valid {
+  border-bottom-color: #02ff35;
+}
+
+.form.invalid svg path {
+  fill: #ff0296;
+}
+
+.form.valid svg path {
+  fill: #02ff35;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 550px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background-color: #f7f9fc;
+    padding: 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(9, 5, 255, 0.9);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 390px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #f7f9fc;
+    padding: 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(9, 5, 255, 0.9);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .container {
+    max-width: 950px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #f7f9fc;
+    padding: 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(9, 5, 255, 0.9);
+  }
+}
